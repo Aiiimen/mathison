@@ -7,27 +7,249 @@
 @font-face {
   font-family: Gotham_light;
   src: url(Gotham-Light.otf); }
-.container {
-  color: white; }
-  .container .header {
-    padding-top: 30px;
+@font-face {
+  font-family: Futura_bold;
+  src: url(FuturaStd-Bold.otf); }
+.header {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  font-family: Futura_bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .header .col-md-1 {
+    cursor: pointer; }
+    .header .col-md-1 a {
+      color: #202020; }
+  .header .hero {
+    position: relative;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .container .header .hero {
-      text-align: center; }
-      .container .header .hero .name {
-        padding-top: 100px;
-        padding-bottom: 30px;
-        font-family: Gotham_bold;
-        letter-spacing: 5;
-        font-size: 50px; }
-      .container .header .hero .description {
-        font-size: 23px;
+    .header .hero .name {
+      padding-top: 100px;
+      padding-bottom: 30px;
+      font-family: Gotham_bold;
+      letter-spacing: 5;
+      font-size: 50px; }
+    .header .hero .description {
+      font-size: 18px;
+      font-family: Gotham_light;
+      padding-bottom: 30px;
+      color: #202020; }
+    .header .hero .long_description {
+      font-size: 16px;
+      font-family: Gotham_light;
+      padding-bottom: 50px;
+      color: #202020; }
+    .header .hero .btn-container .download-btn {
+      color: white;
+      background-color: #3ddcaa;
+      border: none;
+      font-family: Gotham_bold;
+      font-size: 15px;
+      letter-spacing: 2;
+      padding: 15px 45px 15px 45px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+      .header .hero .btn-container .download-btn:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        font-size: 18px; }
+  .header .prototype {
+    width: 100%;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .header .prototype .image {
+      padding: 0;
+      height: auto;
+      box-shadow: 0px 0px 51px -13px rgba(32, 32, 32, 0.6); }
+      .header .prototype .image img {
+        width: 100%; }
+
+.about_section {
+  padding-bottom: 60px;
+  font-family: Gotham_bold; }
+  .about_section .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .about_section .row .title {
+      margin-bottom: 40px; }
+    .about_section .row .about-container .text-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .about_section .row .about-container .text-container .info-text {
         font-family: Gotham_light;
-        padding-bottom: 30px;
-        color: #DCDCDD; }
-      .container .header .hero .download-btn {
-        color: #02C39A;
-        padding: 20px;
-        border: 2px solid #02C39A; }
+        margin-bottom: 40px; }
+        .about_section .row .about-container .text-container .info-text p {
+          font-size: 18px; }
+        .about_section .row .about-container .text-container .info-text h5 {
+          padding-top: 20px;
+          font-family: Gotham_reg;
+          text-align: right;
+          text-decoration: underline;
+          cursor: pointer; }
+    .about_section .row .features_container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      .about_section .row .features_container .feature_holder {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .about_section .row .features_container .feature_holder .feature {
+          height: 200px;
+          width: 200px;
+          background-color: #ccc;
+          border-radius: 50%;
+          margin-bottom: 20px; }
+        .about_section .row .features_container .feature_holder p {
+          font-size: 12px;
+          font-family: Gotham_light;
+          text-align: center;
+          width: 250px; }
+
+.download-section {
+  width: 100%;
+  padding-bottom: 60px;
+  background-color: #415879;
+  padding-top: 40px;
+  color: white;
+  text-align: center; }
+  .download-section .header-text {
+    font-family: Futura_bold; }
+  .download-section .des-download h4 {
+    line-height: 22px;
+    margin-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px; }
+  .download-section .des-download .download-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 20px 65px 20px 65px;
+    font-family: Gotham_bold;
+    letter-spacing: 2;
+    font-size: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+    .download-section .des-download .download-btn:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      font-size: 18px; }
+  .download-section .des-download h6 {
+    margin-top: 30px;
+    font-family: Gotham_reg;
+    text-decoration: underline;
+    cursor: pointer; }
+
+.update-log {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .update-log .update-log-header h1 {
+    font-family: Gotham_bold;
+    text-align: center;
+    margin-bottom: 40px; }
+  .update-log .update-log-header h4 {
+    margin-bottom: 40px;
+    font-family: Gotham_reg; }
+  .update-log .table-container {
+    font-family: Gotham_Light; }
+  .update-log .suggestion-link {
+    font-family: Gotham_reg; }
+    .update-log .suggestion-link a {
+      text-decoration: none;
+      color: inherit; }
+      .update-log .suggestion-link a h5:nth-child(1) {
+        text-align: right;
+        text-decoration: underline;
+        font-family: Gotham_light;
+        margin-bottom: 40px;
+        cursor: pointer; }
+    .update-log .suggestion-link span {
+      text-decoration: underline;
+      cursor: pointer; }
+      .update-log .suggestion-link span a {
+        color: #202020; }
+
+.feedback-section {
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column; }
+  .feedback-section .feedback-header h1 {
+    font-family: Gotham_bold;
+    text-align: center;
+    margin-bottom: 40px; }
+  .feedback-section .feedback-header h4 {
+    font-family: Gotham_reg;
+    text-align: center;
+    margin-bottom: 30px; }
+  .feedback-section .feedback-form-container {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .feedback-section .feedback-form-container .feedback-form h4 {
+      font-family: Gotham_reg;
+      font-size: 14px; }
+    .feedback-section .feedback-form-container .feedback-form input {
+      margin-bottom: 20px;
+      border: 1px solid #202020;
+      padding: 10px;
+      width: 100%; }
+    .feedback-section .feedback-form-container .feedback-form textarea {
+      margin-bottom: 30px;
+      border: 1px solid #202020; }
+    .feedback-section .feedback-form-container .feedback-form button {
+      background-color: #232a35;
+      width: 100%;
+      color: white;
+      border: none;
+      padding: 15px 30px 15px 30px;
+      font-family: Gotham_reg; }
+
+.footer-section {
+  padding-bottom: 20px;
+  background-color: #232a35;
+  font-family: Futura_bold; }
+  .footer-section .container {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: white; }
+    .footer-section .container a {
+      color: white; }
+    .footer-section .container .copyright {
+      margin-top: 40px;
+      font-family: Gotham_light; }
+
+.allupdates .description-allupdates {
+  font-family: Gotham_reg;
+  margin-bottom: 50px; }
+  .allupdates .description-allupdates h5 {
+    padding-top: 40px; }
+    .allupdates .description-allupdates h5 span {
+      text-decoration: underline;
+      cursor: pointer; }
+.allupdates .table {
+  font-family: Gotham_bold; }
+  .allupdates .table tbody tr td {
+    font-family: Gotham_light; }
+
+.alert-section {
+  width: 100%;
+  background-color: #fffa6b;
+  text-align: center;
+  font-size: 12px;
+  font-family: Gotham_light;
+  position: fixed;
+  z-index: 1000;
+  padding: 5px; }
+  .alert-section span {
+    text-decoration: underline;
+    cursor: pointer; }
+    .alert-section span a {
+      color: #202020; }
