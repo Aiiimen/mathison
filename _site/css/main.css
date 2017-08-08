@@ -193,24 +193,28 @@
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .feedback-section .feedback-form-container .feedback-form h4 {
-      font-family: Gotham_reg;
-      font-size: 14px; }
-    .feedback-section .feedback-form-container .feedback-form input {
-      margin-bottom: 20px;
-      border: 1px solid #202020;
-      padding: 10px;
-      width: 100%; }
-    .feedback-section .feedback-form-container .feedback-form textarea {
-      margin-bottom: 30px;
-      border: 1px solid #202020; }
-    .feedback-section .feedback-form-container .feedback-form button {
-      background-color: #232a35;
-      width: 100%;
-      color: white;
-      border: none;
-      padding: 15px 30px 15px 30px;
-      font-family: Gotham_reg; }
+    .feedback-section .feedback-form-container .feedback-form {
+      max-width: 90%; }
+      .feedback-section .feedback-form-container .feedback-form h4 {
+        font-family: Gotham_reg;
+        font-size: 14px; }
+      .feedback-section .feedback-form-container .feedback-form input {
+        margin-bottom: 20px;
+        border: 1px solid #202020;
+        padding: 10px;
+        width: 100%; }
+      .feedback-section .feedback-form-container .feedback-form textarea {
+        max-width: 100%;
+        max-height: 300px;
+        margin-bottom: 30px;
+        border: 1px solid #202020; }
+      .feedback-section .feedback-form-container .feedback-form button {
+        background-color: #232a35;
+        width: 100%;
+        color: white;
+        border: none;
+        padding: 15px 30px 15px 30px;
+        font-family: Gotham_reg; }
 
 .footer-section {
   padding-bottom: 20px;
